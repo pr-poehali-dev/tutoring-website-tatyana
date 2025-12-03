@@ -1,62 +1,68 @@
-import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-background">
+    <div className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
-          Обо мне
-        </h2>
-        
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="GraduationCap" size={32} className="text-primary" />
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-foreground mb-4">
+            Обо мне
+          </h2>
+          <div className="w-24 h-1 bg-accent mx-auto mb-12"></div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="w-full h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
+                <Icon name="User" size={120} className="text-primary/30" />
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Татьяна Юрьевна
+                </h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Репетитор по русскому языку с профессиональным образованием и многолетним опытом работы с детьми.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-lg">
+                  <Icon name="School" size={24} className="text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Образование</h4>
+                    <p className="text-muted-foreground">
+                      ГБПОУ ордена "Знак почета" г. Кудымкар
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Образование</h3>
-                  <p className="text-muted-foreground">
-                    ГБПОУ ордена "Знак почета" г. Кудымкар
-                  </p>
+
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-lg">
+                  <Icon name="Briefcase" size={24} className="text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Опыт работы</h4>
+                    <p className="text-muted-foreground">
+                      4 года работы с детьми в формате репетиторства
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-lg">
+                  <Icon name="Target" size={24} className="text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">Специализация</h4>
+                    <p className="text-muted-foreground">
+                      Подготовка к ЕГЭ, помощь старшеклассникам, работа с упущенным материалом
+                    </p>
+                  </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="pt-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="Award" size={32} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Опыт работы</h3>
-                  <p className="text-muted-foreground">
-                    4 года работы с детьми в формате репетиторства
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="mt-12 max-w-3xl mx-auto">
-          <Card>
-            <CardContent className="pt-6">
-              <p className="text-lg text-foreground leading-relaxed">
-                Я — опытный педагог с профильным образованием и многолетней практикой. 
-                Помогаю ученикам не только освоить программу, но и полюбить русский язык. 
-                Индивидуальный подход к каждому ребенку позволяет добиваться высоких результатов 
-                в обучении и успешной сдачи экзаменов.
-              </p>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
