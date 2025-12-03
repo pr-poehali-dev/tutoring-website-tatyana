@@ -14,10 +14,13 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-card shadow-sm z-50">
+    <header className="fixed top-0 w-full bg-card shadow-sm z-50 border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-foreground">Татьяна Юрьевна</h1>
+          <div className="flex items-center gap-2">
+            <Icon name="GraduationCap" size={28} className="text-primary" />
+            <h1 className="text-xl font-bold text-primary">Татьяна Юрьевна</h1>
+          </div>
           
           <nav className="hidden md:flex gap-6">
             <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-accent transition">
